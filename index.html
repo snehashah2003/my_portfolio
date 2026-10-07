@@ -9,6 +9,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <meta
+        name="description"
+        content="Sneha Shahu - QA Support, WordPress Developer and Designer Portfolio"
+    >
+
     <title>Sneha Shahu | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -18,22 +23,35 @@
 <body>
 
 
-<!-- ==================================================
-     NAVIGATION
-================================================== -->
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-<header>
+<header class="site-header">
 
     <nav class="navbar">
 
-        <div class="logo">
-            <a href="#home">
-                Sneha<span>.shahu</span>
-            </a>
-        </div>
+        <!-- LOGO -->
+        <a href="#home" class="logo">
+            Sneha<span>.shahu</span>
+        </a>
 
 
-        <ul class="nav-links">
+        <!-- MOBILE MENU BUTTON -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+        >
+            ☰
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <ul class="nav-links" id="navLinks">
 
             <li>
                 <a href="#home">Home</a>
@@ -63,9 +81,15 @@
                 <a href="#projects">Projects</a>
             </li>
 
+            <!-- MOBILE CONTACT -->
+            <li class="mobile-contact">
+                <a href="#contact">Contact Me</a>
+            </li>
+
         </ul>
 
 
+        <!-- DESKTOP CONTACT -->
         <a href="#contact" class="nav-contact">
             Contact Me
         </a>
@@ -76,55 +100,54 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
      HOME
-================================================== -->
+===================================================== -->
 
 <section class="hero" id="home">
 
+    <div class="hero-content">
 
-    <!-- LEFT -->
-
-    <div class="hero-text">
-
-        <p class="welcome">
+        <p class="eyebrow">
             WELCOME TO MY PORTFOLIO
         </p>
 
-
         <h1>
-            Hi, I'm <span>Sneha Shahu</span>
+            Hi, I'm
+            <span>Sneha Shahu</span>
         </h1>
 
-
         <h2>
-            QA Support | WordPress Developer | Web & Graphic Designer
+            QA Support • WordPress Developer • Designer
         </h2>
 
-
         <p class="hero-description">
-
-            Computer System Engineering graduate with experience
-            in Software Quality Assurance, WordPress Development,
-            responsive website design, graphic design, and
-            social media management.
-
+            I am passionate about technology, software quality,
+            web development and creative design. I enjoy building
+            user-friendly digital experiences and testing systems
+            to make sure they work smoothly and reliably.
         </p>
 
 
         <div class="hero-buttons">
 
             <a
-                href="#contact"
-                class="primary-btn"
+                href="#projects"
+                class="btn btn-primary"
             >
-                Contact Me
+                View My Projects
             </a>
 
-
             <a
-                href="Sneha Shah Resume.pdf"
-                class="secondary-btn"
+                href="Sneha Shahu Resume.pdf"
+                class="btn btn-outline"
                 download
             >
                 Download Resume
@@ -133,7 +156,7 @@
         </div>
 
 
-        <div class="social-links">
+        <div class="hero-social">
 
             <a
                 href="https://github.com/snehashah2003"
@@ -142,7 +165,6 @@
             >
                 GitHub
             </a>
-
 
             <a
                 href="https://www.linkedin.com/in/sneha-shahu-53b13a367"
@@ -157,15 +179,12 @@
     </div>
 
 
-
-    <!-- RIGHT IMAGE -->
-
     <div class="hero-image">
 
-        <div class="image-border">
+        <div class="profile-frame">
 
             <img
-                src="sneha shah.jpg"
+                src="sneha.JPEG"
                 alt="Sneha Shahu"
             >
 
@@ -177,145 +196,93 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
      ABOUT
-================================================== -->
+===================================================== -->
 
-<section class="about section" id="about">
-
-
-    <div class="section-heading">
-
-        <p>
-            GET TO KNOW MORE
-        </p>
-
-        <h2>
-            About <span>Me</span>
-        </h2>
-
-    </div>
-
-
+<section class="section about" id="about">
 
     <div class="about-container">
 
 
-        <!-- IMAGE -->
-
         <div class="about-image">
 
-            <img
-                src="sneha shah.jpg"
-                alt="Sneha Shahu"
-            >
+            <div class="about-image-frame">
+
+                <img
+                    src="sneha.JPEG"
+                    alt="Sneha Shahu"
+                >
+
+            </div>
 
         </div>
 
 
-
-        <!-- CONTENT -->
-
         <div class="about-content">
 
+            <p class="eyebrow">
+                ABOUT ME
+            </p>
+
             <h3>
-                QA Support, Developer & Designer
+                Technology Meets
+                <span>Creativity</span>
             </h3>
 
-
             <p>
-
-                I am Sneha Shahu, a Computer System Engineering
-                graduate with experience in Software Quality Assurance,
-                WordPress Development, responsive website design,
-                graphic design, and social media management.
-
+                I'm Sneha Shahu, a Computer System Engineering
+                graduate with interests in software quality
+                assurance, WordPress development, web technologies
+                and digital design.
             </p>
 
-
             <p>
-
-                I have experience performing manual, functional,
-                and regression testing for a Healthcare EMR/ERP
-                system. I also have experience developing responsive
-                WordPress websites and creating digital and
-                promotional content.
-
+                I have experience working with healthcare EMR/ERP
+                software, WordPress websites, manual software
+                testing, graphic design and social media content.
             </p>
 
+            <p>
+                I enjoy learning new technologies, solving problems
+                and creating digital experiences that are simple,
+                useful and visually appealing.
+            </p>
 
 
             <div class="personal-info">
 
-
-                <div>
-
-                    <strong>
-                        Name
-                    </strong>
-
-                    <span>
-                        Sneha Shahu
-                    </span>
-
+                <div class="info-box">
+                    <small>Name</small>
+                    <strong>Sneha Shahu</strong>
                 </div>
 
-
-
-                <div>
-
-                    <strong>
-                        Location
-                    </strong>
-
-                    <span>
-                        Biratnagar, Nepal
-                    </span>
-
+                <div class="info-box">
+                    <small>Location</small>
+                    <strong>Biratnagar, Nepal</strong>
                 </div>
 
-
-
-                <div>
-
-                    <strong>
-                        Email
-                    </strong>
-
-                    <span>
-                        snehashah1660@gmail.com
-                    </span>
-
+                <div class="info-box">
+                    <small>Email</small>
+                    <strong>snehashah1660@gmail.com</strong>
                 </div>
 
-
-
-                <div>
-
-                    <strong>
-                        Phone
-                    </strong>
-
-                    <span>
-                        +977 971-2083970
-                    </span>
-
+                <div class="info-box">
+                    <small>Phone</small>
+                    <strong>+977 971-2083970</strong>
                 </div>
-
 
             </div>
 
 
-
             <a
-                href="Sneha Shah Resume.pdf"
-                class="primary-btn"
+                href="Sneha Shahu Resume.pdf"
+                class="btn btn-primary"
                 download
             >
                 Download Resume
             </a>
 
-
         </div>
 
     </div>
@@ -324,112 +291,87 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
      EDUCATION
-================================================== -->
+===================================================== -->
 
 <section
-    class="education section"
+    class="section section-light"
     id="education"
 >
 
-
     <div class="section-heading">
 
-        <p>
-            ACADEMIC BACKGROUND
-        </p>
+        <p>MY EDUCATION</p>
 
         <h2>
-            My <span>Education</span>
+            Academic
+            <span>Background</span>
         </h2>
 
     </div>
 
 
+    <div class="education-card">
 
-    <div class="education-container">
-
-
-        <div class="education-card">
-
-
-            <div class="education-year">
-
-                Dec 2025
-
-            </div>
+        <div class="education-date">
+            Completed Dec 2025
+        </div>
 
 
+        <div class="education-details">
 
-            <div class="education-content">
+            <h3>
+                BSc (Hons) Computer System Engineering (IT)
+            </h3>
 
+            <h4>
+                ISMT College, Biratnagar
+            </h4>
 
-                <h3>
-                    BSc (Hons) Computer System Engineering (IT)
-                </h3>
+            <p>
+                Offered by University of Sunderland,
+                United Kingdom
+            </p>
 
-
-                <h4>
-                    ISMT College, Biratnagar
-                </h4>
-
-
-                <p class="university">
-
-                    Offered by University of Sunderland, UK
-
-                </p>
-
-
-                <p>
-
-                    <strong>
-                        Award Classification:
-                    </strong>
-
-                    Second Class Honors (First Division)
-
-                </p>
+            <p class="highlight-text">
+                Award Classification:
+                Second Class Honors (1st Division)
+            </p>
 
 
+            <h5>
+                Academic Exposure & Projects
+            </h5>
 
-                <p class="academic-title">
+            <ul>
 
-                    <strong>
-                        Academic Exposure & Projects
-                    </strong>
+                <li>
+                    Created basic network models using
+                    Cisco Packet Tracer.
+                </li>
 
-                </p>
+                <li>
+                    Developed small-scale applications
+                    and systems during programming coursework.
+                </li>
 
+                <li>
+                    Worked with Java, Python, databases
+                    and system documentation.
+                </li>
 
+                <li>
+                    Gained introductory exposure to
+                    mobile application development.
+                </li>
 
-                <ul>
+                <li>
+                    Studied web technologies and
+                    software development concepts.
+                </li>
 
-                    <li>
-                        Designed and implemented basic network
-                        models using Cisco Packet Tracer.
-                    </li>
-
-                    <li>
-                        Developed small-scale applications and
-                        systems as part of programming coursework.
-                    </li>
-
-                    <li>
-                        Worked on coursework involving Java,
-                        Python, databases, and system documentation.
-                    </li>
-
-                    <li>
-                        Gained introductory exposure to mobile
-                        application development and web technologies.
-                    </li>
-
-                </ul>
-
-
-            </div>
+            </ul>
 
         </div>
 
@@ -439,21 +381,15 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
      SKILLS
-================================================== -->
+===================================================== -->
 
-<section
-    class="skills section"
-    id="skills"
->
-
+<section class="section" id="skills">
 
     <div class="section-heading">
 
-        <p>
-            WHAT I DO
-        </p>
+        <p>WHAT I DO</p>
 
         <h2>
             My <span>Skills</span>
@@ -462,126 +398,87 @@
     </div>
 
 
-
     <div class="skills-grid">
 
 
-        <!-- 1 -->
-
         <div class="skill-card">
 
-            <div class="skill-number">
-                01
-            </div>
+            <div class="card-number">01</div>
 
-            <h3>
-                Software Quality Assurance
-            </h3>
+            <h3>Software QA Support</h3>
 
             <p>
-                Manual Testing, Functional Testing,
-                Regression Testing and Bug Reporting.
+                Manual testing, functional testing,
+                usability testing, regression testing,
+                bug reporting and retesting.
             </p>
 
         </div>
 
 
-
-        <!-- 2 -->
-
         <div class="skill-card">
 
-            <div class="skill-number">
-                02
-            </div>
+            <div class="card-number">02</div>
 
-            <h3>
-                Healthcare EMR / ERP Testing
-            </h3>
+            <h3>Healthcare EMR/ERP Testing</h3>
 
             <p>
-                Testing healthcare software workflows,
-                modules, frontend and backend functionality.
+                Experience testing registration,
+                appointments, billing, pharmacy,
+                optical and surgery modules.
             </p>
 
         </div>
 
 
-
-        <!-- 3 -->
-
         <div class="skill-card">
 
-            <div class="skill-number">
-                03
-            </div>
+            <div class="card-number">03</div>
 
-            <h3>
-                WordPress Development
-            </h3>
+            <h3>WordPress Development</h3>
 
             <p>
                 WordPress themes, plugins,
-                customization and content management.
+                content management and website maintenance.
             </p>
 
         </div>
 
 
-
-        <!-- 4 -->
-
         <div class="skill-card">
 
-            <div class="skill-number">
-                04
-            </div>
+            <div class="card-number">04</div>
 
-            <h3>
-                Responsive Web Design
-            </h3>
+            <h3>Responsive Web Design</h3>
 
             <p>
-                Building responsive and user-friendly
-                websites for desktop and mobile devices.
+                Creating websites that work properly
+                on mobile, tablet, laptop and desktop.
             </p>
 
         </div>
 
 
-
-        <!-- 5 -->
-
         <div class="skill-card">
 
-            <div class="skill-number">
-                05
-            </div>
+            <div class="card-number">05</div>
 
-            <h3>
-                Graphic Design
-            </h3>
+            <h3>Canva & Graphic Design</h3>
 
             <p>
-                Canva design, promotional posters,
-                banners and social media creatives.
+                Creating promotional graphics,
+                posters and visual content for
+                businesses and social media.
             </p>
 
         </div>
 
 
-
-        <!-- 6 -->
-
         <div class="skill-card">
 
-            <div class="skill-number">
-                06
-            </div>
+            <div class="card-number">06</div>
 
-            <h3>
-                Social Media Handling
-            </h3>
+            <h3>Social Media Handling</h3>
 
             <p>
                 Social media page management,
@@ -597,28 +494,24 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
      EXPERIENCE
-================================================== -->
+===================================================== -->
 
 <section
-    class="experience section"
+    class="section section-light"
     id="experience"
 >
 
-
     <div class="section-heading">
 
-        <p>
-            MY PROFESSIONAL JOURNEY
-        </p>
+        <p>MY JOURNEY</p>
 
         <h2>
             Work <span>Experience</span>
         </h2>
 
     </div>
-
 
 
     <div class="timeline">
@@ -630,51 +523,47 @@
 
             <div class="timeline-dot"></div>
 
+            <div class="timeline-card">
 
-            <div class="timeline-content">
-
-
-                <span class="experience-date">
-
-                    August 2026 – Present
-
+                <span class="date-badge">
+                    Aug 2026 – Present
                 </span>
-
 
                 <h3>
                     QA Support
                 </h3>
 
-
                 <h4>
                     Paaila Technology
                 </h4>
 
-
                 <p>
-                    Dynamic EMR Healthcare ERP
+                    Working with Dynamic EMR Healthcare ERP
+                    and supporting software quality assurance.
                 </p>
-
 
                 <ul>
 
                     <li>
-                        Perform manual testing of healthcare
-                        EMR/ERP modules.
+                        Perform manual testing of
+                        healthcare EMR/ERP modules.
                     </li>
 
                     <li>
-                        Test Patient Registration, Doctor Registration,
-                        Appointment and Scheduling workflows.
+                        Test Patient Registration
+                        and Doctor Registration.
                     </li>
 
                     <li>
-                        Test Billing, Pharmacy, Optical
-                        and Surgery modules.
+                        Test Appointment and Scheduling.
                     </li>
 
                     <li>
-                        Test frontend and backend workflows.
+                        Test Billing, Pharmacy and Optical.
+                    </li>
+
+                    <li>
+                        Test Surgery-related workflows.
                     </li>
 
                     <li>
@@ -682,20 +571,15 @@
                     </li>
 
                     <li>
-                        Report bugs and retest resolved issues.
-                    </li>
-
-                    <li>
-                        Perform regression testing after changes.
+                        Report bugs and perform
+                        retesting and regression testing.
                     </li>
 
                 </ul>
 
-
             </div>
 
         </div>
-
 
 
         <!-- WORDPRESS -->
@@ -704,60 +588,44 @@
 
             <div class="timeline-dot"></div>
 
+            <div class="timeline-card">
 
-            <div class="timeline-content">
-
-
-                <span class="experience-date">
-
-                    November 2025 – May 2026
-
+                <span class="date-badge">
+                    Nov 2025 – May 2026
                 </span>
-
 
                 <h3>
                     WordPress Developer
                 </h3>
 
-
                 <h4>
                     InDesign Media
                 </h4>
 
-
                 <ul>
 
                     <li>
-                        Designed and managed responsive
-                        WordPress websites.
+                        Developed responsive WordPress websites.
                     </li>
 
                     <li>
-                        Worked on website creation,
-                        customization and content management.
+                        Managed website content and publishing.
                     </li>
 
                     <li>
-                        Created posters, banners and social
-                        media creatives using Canva.
+                        Created visual content using Canva.
                     </li>
 
                     <li>
-                        Updated website content and assisted
-                        with website optimization.
-                    </li>
-
-                    <li>
-                        Assisted with technical SEO.
+                        Worked on website optimization
+                        and technical SEO.
                     </li>
 
                 </ul>
 
-
             </div>
 
         </div>
-
 
 
         <!-- SOCIAL MEDIA -->
@@ -766,19 +634,19 @@
 
             <div class="timeline-dot"></div>
 
+            <div class="timeline-card">
 
-            <div class="timeline-content">
-
+                <span class="date-badge">
+                    Experience
+                </span>
 
                 <h3>
                     Social Media Handler
                 </h3>
 
-
                 <h4>
                     Shree Ganpati Plastic Bora Udyog
                 </h4>
-
 
                 <ul>
 
@@ -787,17 +655,18 @@
                     </li>
 
                     <li>
-                        Created promotional posts.
+                        Created and published promotional content.
                     </li>
 
                     <li>
-                        Designed more than 150 promotional
-                        posters and social media creatives
-                        using Canva.
+                        Designed promotional graphics using Canva.
+                    </li>
+
+                    <li>
+                        Created more than 150 promotional posters.
                     </li>
 
                 </ul>
-
 
             </div>
 
@@ -810,21 +679,18 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
      CERTIFICATIONS
-================================================== -->
+===================================================== -->
 
 <section
-    class="certifications section"
+    class="section"
     id="certifications"
 >
 
-
     <div class="section-heading">
 
-        <p>
-            LEARNING & DEVELOPMENT
-        </p>
+        <p>ACHIEVEMENTS</p>
 
         <h2>
             Certifications &
@@ -834,98 +700,66 @@
     </div>
 
 
-
     <div class="cert-grid">
 
 
-        <!-- CERT 1 -->
-
         <div class="cert-card">
 
-            <span>
+            <div class="cert-number">
                 01
-            </span>
-
-
-            <h3>
-                Student Leaders Conclave 2019
-            </h3>
-
-
-            <p>
-                Success Society International
-            </p>
-
-
-            <p>
-                Hotel Harrison Palace
-            </p>
-
-        </div>
-
-
-
-        <!-- CERT 2 -->
-
-        <div class="cert-card">
-
-            <span>
-                02
-            </span>
-
+            </div>
 
             <h3>
                 WordPress for Beginners:
                 Build Professional Websites
             </h3>
 
+            <p>Udemy</p>
 
-            <p>
-                Udemy — March 2026
-            </p>
-
-
-            <p>
-
-                Website creation, customization,
-                content management, and WordPress
-                fundamentals.
-
-            </p>
+            <small>
+                March 2026
+            </small>
 
         </div>
 
 
+        <div class="cert-card">
 
-        <!-- CERT 3 -->
+            <div class="cert-number">
+                02
+            </div>
+
+            <h3>
+                Generative AI for Business Leaders:
+                Drive AI-Powered Growth
+            </h3>
+
+            <p>Udemy</p>
+
+            <small>
+                January 2026
+            </small>
+
+        </div>
+
 
         <div class="cert-card">
 
-            <span>
+            <div class="cert-number">
                 03
-            </span>
-
+            </div>
 
             <h3>
-
-                Generative AI for Business Leaders:
-                Drive AI-Powered Growth
-
+                Student Leaders Conclave 2019
             </h3>
 
-
             <p>
-                Udemy — January 2026
+                Success Society International
             </p>
 
-
-            <p>
-
-                Generative AI applications,
-                business use cases, and strategies
-                for AI-powered growth.
-
-            </p>
+            <small>
+                Hotel Harrison Palace
+            </small>
 
         </div>
 
@@ -936,28 +770,24 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
      PROJECTS
-================================================== -->
+===================================================== -->
 
 <section
-    class="projects section"
+    class="section section-light"
     id="projects"
 >
 
-
     <div class="section-heading">
 
-        <p>
-            MY WORK
-        </p>
+        <p>MY WORK</p>
 
         <h2>
             Featured <span>Projects</span>
         </h2>
 
     </div>
-
 
 
     <div class="projects-grid">
@@ -967,202 +797,117 @@
 
         <div class="project-card">
 
-
             <div class="project-number">
                 01
             </div>
 
-
             <h3>
-                WordPress Website Project
+                WordPress Business Website
             </h3>
 
-
             <p>
-
                 Designed and developed a responsive
-                business website using WordPress.
-
+                business website using WordPress,
+                focusing on usability, layout and
+                content presentation.
             </p>
 
+            <div class="tags">
 
-            <p>
-
-                Focused on mobile and desktop
-                responsiveness with a clean and
-                user-friendly interface.
-
-            </p>
-
-
-            <div class="project-tags">
-
-                <span>
-                    WordPress
-                </span>
-
-                <span>
-                    Responsive Design
-                </span>
-
-                <span>
-                    Web Design
-                </span>
+                <span>WordPress</span>
+                <span>Responsive Design</span>
+                <span>Web Design</span>
 
             </div>
 
-
         </div>
-
 
 
         <!-- PROJECT 2 -->
 
         <div class="project-card">
 
-
             <div class="project-number">
                 02
             </div>
 
-
             <h3>
-                Poster & Social Media Design
+                Healthcare ERP Testing
             </h3>
 
-
             <p>
-
-                Created promotional posters and
-                social media creatives using Canva.
-
+                Performed testing on healthcare
+                EMR/ERP workflows including patient
+                registration, appointments, billing,
+                pharmacy and surgery modules.
             </p>
 
+            <div class="tags">
 
-            <p>
-
-                Focused on clean, professional,
-                and engaging visual content.
-
-            </p>
-
-
-            <div class="project-tags">
-
-                <span>
-                    Canva
-                </span>
-
-                <span>
-                    Graphic Design
-                </span>
-
-                <span>
-                    Social Media
-                </span>
+                <span>QA</span>
+                <span>Manual Testing</span>
+                <span>EMR/ERP</span>
 
             </div>
 
-
         </div>
-
 
 
         <!-- PROJECT 3 -->
 
         <div class="project-card">
 
-
             <div class="project-number">
                 03
             </div>
 
-
             <h3>
-                Personal Portfolio Website
+                Poster & Social Media Design
             </h3>
 
-
             <p>
-
-                Designed and developed this personal
-                portfolio website to showcase my
-                education, skills, experience,
-                certifications and projects.
-
+                Created promotional graphics and
+                more than 150 social media posters
+                for business marketing.
             </p>
 
+            <div class="tags">
 
-            <div class="project-tags">
-
-                <span>
-                    HTML
-                </span>
-
-                <span>
-                    CSS
-                </span>
-
-                <span>
-                    Responsive Design
-                </span>
+                <span>Canva</span>
+                <span>Graphic Design</span>
+                <span>Social Media</span>
 
             </div>
 
-
         </div>
-
 
 
         <!-- PROJECT 4 -->
 
         <div class="project-card">
 
-
             <div class="project-number">
                 04
             </div>
 
-
             <h3>
-                Healthcare EMR / ERP QA
+                Personal Portfolio Website
             </h3>
 
-
             <p>
-
-                Performed software quality assurance
-                testing across healthcare system
-                workflows and modules.
-
+                Designed and developed this responsive
+                personal portfolio website to showcase
+                my education, skills, experience,
+                projects and certifications.
             </p>
 
+            <div class="tags">
 
-            <p>
-
-                Worked with registration, appointments,
-                billing, pharmacy, optical and
-                surgery-related workflows.
-
-            </p>
-
-
-            <div class="project-tags">
-
-                <span>
-                    QA
-                </span>
-
-                <span>
-                    Manual Testing
-                </span>
-
-                <span>
-                    Regression Testing
-                </span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive Design</span>
 
             </div>
-
 
         </div>
 
@@ -1173,99 +918,67 @@
 
 
 
-<!-- ==================================================
+<!-- =====================================================
      CONTACT
-================================================== -->
+     IMPORTANT: ONLY ONE CONTACT SECTION
+===================================================== -->
 
 <section
-    class="contact"
+    class="section contact"
     id="contact"
 >
-
 
     <div class="contact-container">
 
 
-        <!-- ==========================================
-             LEFT SIDE
-        =========================================== -->
+        <!-- LEFT SIDE -->
 
         <div class="contact-info">
 
-
-            <p class="contact-small">
-
+            <p class="eyebrow">
                 GET IN TOUCH
-
             </p>
 
-
-
             <h2>
-
                 Let's Talk About Your
-
-                <span>
-                    Next Project
-                </span>
-
+                <span>Next Project</span>
             </h2>
 
-
-
             <p class="contact-description">
-
                 I'm open to professional opportunities,
                 collaborations, projects, and connecting
                 with people in technology and design.
-
             </p>
-
 
 
             <!-- PHONE -->
 
             <div class="contact-item">
 
-
                 <div class="contact-icon">
-
                     ☎
-
                 </div>
-
 
                 <div>
 
-                    <small>
-                        Phone
-                    </small>
-
+                    <small>Phone</small>
 
                     <a href="tel:+9779712083970">
-
                         +977 971-2083970
-
                     </a>
 
                 </div>
 
-
             </div>
-
 
 
             <!-- ALTERNATE PHONE -->
 
             <div class="contact-item">
 
-
                 <div class="contact-icon">
-
                     ☎
-
                 </div>
-
 
                 <div>
 
@@ -1273,142 +986,99 @@
                         Alternate Phone
                     </small>
 
-
-                    <a href="tel:9815351113">
-
+                    <a href="tel:+9779815351113">
                         9815351113
-
                     </a>
 
                 </div>
 
-
             </div>
-
 
 
             <!-- EMAIL -->
 
             <div class="contact-item">
 
-
                 <div class="contact-icon">
-
                     ✉
-
                 </div>
-
 
                 <div>
 
-                    <small>
-                        Email
-                    </small>
+                    <small>Email</small>
 
-
-                    <a href="mailto:snehashah1660@gmail.com">
-
+                    <a
+                        href="mailto:snehashah1660@gmail.com"
+                    >
                         snehashah1660@gmail.com
-
                     </a>
 
                 </div>
 
-
             </div>
-
 
 
             <!-- LINKEDIN -->
 
             <div class="contact-item">
 
-
                 <div class="contact-icon">
-
                     in
-
                 </div>
-
 
                 <div>
 
-                    <small>
-                        LinkedIn
-                    </small>
-
+                    <small>LinkedIn</small>
 
                     <a
                         href="https://www.linkedin.com/in/sneha-shahu-53b13a367"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-
                         Sneha Shahu
-
                     </a>
 
                 </div>
 
-
             </div>
-
 
 
             <!-- GITHUB -->
 
             <div class="contact-item">
 
-
                 <div class="contact-icon">
-
                     GH
-
                 </div>
-
 
                 <div>
 
-                    <small>
-                        GitHub
-                    </small>
-
+                    <small>GitHub</small>
 
                     <a
                         href="https://github.com/snehashah2003"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-
                         snehashah2003
-
                     </a>
 
                 </div>
 
-
             </div>
-
 
 
             <!-- LOCATION -->
 
             <div class="contact-item">
 
-
                 <div class="contact-icon">
-
                     ⌖
-
                 </div>
-
 
                 <div>
 
-                    <small>
-                        Location
-                    </small>
-
+                    <small>Location</small>
 
                     <p>
                         Biratnagar, Nepal
@@ -1416,18 +1086,27 @@
 
                 </div>
 
-
             </div>
 
 
         </div>
 
 
-        <!-- ==========================================
+
+        <!-- =================================================
              RIGHT SIDE CONTACT FORM
-        =========================================== -->
+        ================================================== -->
 
         <div class="contact-form">
+
+            <h3>
+                Send Me a Message
+            </h3>
+
+            <p class="form-description">
+                Have a project, opportunity or question?
+                Feel free to send me a message.
+            </p>
 
 
             <form
@@ -1436,9 +1115,7 @@
             >
 
 
-                <!-- ==============================
-                     ROW 1: NAME + EMAIL
-                =============================== -->
+                <!-- NAME + EMAIL -->
 
                 <div class="form-row">
 
@@ -1446,11 +1123,8 @@
                     <div class="form-group">
 
                         <label for="name">
-
                             Your Name *
-
                         </label>
-
 
                         <input
                             type="text"
@@ -1463,15 +1137,11 @@
                     </div>
 
 
-
                     <div class="form-group">
 
                         <label for="email">
-
                             Email *
-
                         </label>
-
 
                         <input
                             type="email"
@@ -1487,10 +1157,7 @@
                 </div>
 
 
-
-                <!-- ==============================
-                     ROW 2: PHONE + SUBJECT
-                =============================== -->
+                <!-- PHONE + SUBJECT -->
 
                 <div class="form-row">
 
@@ -1498,11 +1165,8 @@
                     <div class="form-group">
 
                         <label for="phone">
-
                             Phone No.
-
                         </label>
-
 
                         <input
                             type="tel"
@@ -1514,15 +1178,11 @@
                     </div>
 
 
-
                     <div class="form-group">
 
                         <label for="subject">
-
                             Subject *
-
                         </label>
-
 
                         <input
                             type="text"
@@ -1538,134 +1198,168 @@
                 </div>
 
 
-
-                <!-- ==============================
-                     MESSAGE
-                =============================== -->
+                <!-- MESSAGE -->
 
                 <div class="form-group">
 
-
                     <label for="message">
-
                         Your Message *
-
                     </label>
-
 
                     <textarea
                         id="message"
                         name="message"
-                        rows="7"
-                        placeholder="Enter your message..."
+                        rows="6"
+                        placeholder="Write your message..."
                         required
                     ></textarea>
 
-
                 </div>
 
-
-
-                <!-- ==============================
-                     SUBMIT
-                =============================== -->
 
                 <button
                     type="submit"
                     class="submit-btn"
                 >
-
                     Send Message →
-
                 </button>
 
 
             </form>
 
-
         </div>
 
 
     </div>
 
-
 </section>
 
 
+<!-- END MAIN -->
+</main>
 
-<!-- ==================================================
+
+
+<!-- =====================================================
      FOOTER
-================================================== -->
+     IMPORTANT: ONLY ONE FOOTER
+===================================================== -->
 
-<footer>
-
-
-    <div class="footer-content">
+<footer class="footer">
 
 
-        <div>
+    <div class="footer-container">
 
 
-            <h2>
+        <!-- BRAND -->
 
+        <div class="footer-brand">
+
+            <a
+                href="#home"
+                class="footer-logo"
+            >
                 Sneha<span>.shahu</span>
+            </a>
 
-            </h2>
-
-
-            <p>
-
-                QA Support | WordPress Developer | Designer
-
+            <p class="footer-role">
+                QA Support • WordPress Developer • Designer
             </p>
 
+            <p class="footer-description">
+                Creating, testing and designing
+                meaningful digital experiences.
+            </p>
 
         </div>
 
 
 
-        <div class="footer-links">
+        <!-- QUICK LINKS -->
 
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
 
             <a href="#home">
                 Home
             </a>
 
-
             <a href="#about">
-                About
+                About Me
             </a>
-
 
             <a href="#education">
                 Education
             </a>
 
-
             <a href="#skills">
                 Skills
             </a>
 
+        </div>
+
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-column">
+
+            <h3>
+                Explore
+            </h3>
 
             <a href="#experience">
                 Experience
             </a>
 
-
             <a href="#certifications">
                 Certifications
             </a>
-
 
             <a href="#projects">
                 Projects
             </a>
 
-
             <a href="#contact">
-                Contact
+                Contact Me
             </a>
 
+        </div>
+
+
+
+        <!-- CONNECT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Connect
+            </h3>
+
+            <a
+                href="mailto:snehashah1660@gmail.com"
+            >
+                Email
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/sneha-shahu-53b13a367"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/snehashah2003"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
 
         </div>
 
@@ -1674,20 +1368,140 @@
 
 
 
+    <!-- FOOTER BOTTOM -->
+
     <div class="footer-bottom">
 
-
         <p>
-
-            © 2026 Sneha Shahu. All Rights Reserved.
-
+            © 2026 Sneha Shahu.
+            All Rights Reserved.
         </p>
 
+        <a href="#home">
+            Back to Top ↑
+        </a>
 
     </div>
 
 
 </footer>
+
+
+
+<!-- =====================================================
+     MOBILE MENU JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    /* OPEN / CLOSE MENU */
+
+    menuToggle.addEventListener(
+        "click",
+        function () {
+
+            navLinks.classList.toggle("active");
+
+            const isOpen =
+                navLinks.classList.contains("active");
+
+            menuToggle.innerHTML =
+                isOpen ? "✕" : "☰";
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+        }
+    );
+
+
+    /* CLOSE MENU WHEN A LINK IS CLICKED */
+
+    const links =
+        navLinks.querySelectorAll("a");
+
+    links.forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                navLinks.classList.remove("active");
+
+                menuToggle.innerHTML = "☰";
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+        );
+
+    });
+
+
+    /* CLOSE MENU WHEN CHANGING TO DESKTOP */
+
+    window.addEventListener(
+        "resize",
+        function () {
+
+            if (window.innerWidth > 900) {
+
+                navLinks.classList.remove("active");
+
+                menuToggle.innerHTML = "☰";
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+    );
+
+
+    /* CLOSE MOBILE MENU WHEN CLICKING OUTSIDE */
+
+    document.addEventListener(
+        "click",
+        function (event) {
+
+            const clickedInsideNavbar =
+                event.target.closest(".navbar");
+
+            if (
+                !clickedInsideNavbar &&
+                navLinks.classList.contains("active")
+            ) {
+
+                navLinks.classList.remove("active");
+
+                menuToggle.innerHTML = "☰";
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+    );
+
+</script>
 
 
 </body>
