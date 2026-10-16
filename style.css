@@ -1763,3 +1763,32 @@ textarea {
         font-size: 34px;
     }
 }
+
+/* Project website and GitHub links */
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.project-links .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
